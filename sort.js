@@ -1,6 +1,6 @@
 var sortNumber = function (number) {
    number.sort(function (a, b) {
-       if (a == b) {
+       if (a === b) {
            return 0;
        }
        return a < b ? -1 : 1;
@@ -12,4 +12,7 @@ sortNumber(number);
 console.log(number);
 $ git add sort.js
 $ git commit -m "配列をソートする処理を追加しました"
+$ git push origin add-sort-func
+$ git add sort.js
+$ git commit -m "厳密等価演算子(===)を使用するように修正"
 $ git push origin add-sort-func
